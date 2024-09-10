@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our services</title>
+    <style>
+
+.continer {
+width: 80%;
+margin-top: 99px;
+max-width: 600px;
+text-align: center;
+padding: 20px;
+border: 2px solid #333;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out;
+}
+::-webkit-scrollbar{
+            background-color: rgba(2, 2, 2, 0.555);
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(127, 255, 212, 0.295);
+        }
+.quote {
+font-size: 1.5em;
+color: #333;
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@keyframes moveUp {
+from {
+transform: translateY(20px);
+}
+to {
+transform: translateY(0);
+}
+}
+
+      .im{
+        display: flex;
+        height: 400px;
+        width:70%;
+        overflow: scroll;
+        box-shadow: inset;
+        border-radius: 100px;
+        border: 3px solid gold;
+        gap: 200px;
+        margin-left: 200px;
+      }
+      #tours .title h2{
+        margin-top: 100px;
+      }
+      @media screen and (max-width:600px) {
+        .im{
+        display: flex;
+        height: 400px;
+        width:70%;
+        overflow: scroll;
+        border-radius: 100px;
+        border: 3px solid rgb(63, 58, 28);
+        gap: 40px;
+     margin-left: -1px;
+        
+      }
+      #tours .title h2{
+        font-size: 12px;
+        margin-top: 100px;
+      }
+     
+      }
+    </style>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Slider.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="our sercvices.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="images/holy.jpg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="index.html" >home</a>
+              </li>
+              <li>
+                <a href="about.html" >about</a>
+              </li>
+              <li>
+                <a href="our services.html" >services</a>
+              </li>
+              <li>
+                <a href="Scroll.html" >place orther</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>our services</h1>
+          <p>
+            Founded on the belief that visual media can drive social change, Holy Concepts has grown into
+a leading name in the industry. Our journey began with a simple mission: to create beautiful
+images and videos that inspire and uplift. Over the years, we have expanded our vision to
+include a strong focus on cultural sensitivity and anti-bullying initiatives.
+
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">holy concepts</a>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>beautiful <span>fixtures</span></h2>
+        <div class="slider-container">
+          <div class="slide">
+            <img src="images\1718519622269.jpg" class="slide-img" alt="" />
+            <h1></h1>
+          </div>
+          <div class="slide">
+            <img src="images\1718520269124.jpg" class="slide-img" alt="" />
+            <h1></h1>
+          </div>
+          <div class="slide">
+            <img src="images\1718520432279.jpg" class="slide-img" alt="" />
+            <h1></h1>
+          </div>
+          <div class="slide">
+            <div>
+              <img src="images\1718520008423.jpg" class="person-img" alt="" />
+              <h4>Director Holy</h4>
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="prevBtn">
+            prev
+          </button>
+          <button type="button" class="nextBtn">
+            next
+          </button>
+        </div>
+    
+        <!-- javascript -->
+        <script src="Slider.js"></script>
+      </div>
+
+
+      
+    </section>
+    <!-- services -->
+    <section id="services" class="section" style="margin-top: 100px;">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+        <p >Holy Concepts stands at the intersection of creativity and social responsibility, blending the art
+          of photography and cinematography with a mission to <span>foster cultural sensitivity and combat
+          bullying</span>. This unique approach not only distinguishes Holy Concepts in the competitive world of
+          visual arts but also underscores its commitment to making a positive societal impact.
+          
+          </div>
+<div class="im">
+  <img src="1718519909838.jpgg" alt="">
+  <img src="1718519654910.jpg" alt="">
+  <img src="1718484982235.jpg" alt="">
+  <img src="images\1718520559342.jpg" alt="">
+  <img src="images\1718519795043.jpg" alt="">
+  <img src="images\1718520018840.jpg" alt="">
+  <img src="images\1718519757932.jpg" alt="">
+  <img src="images\1718484989233.jpg" alt="">
+  <img src="images\1718519795043.jpg" alt="">
+</div>
+
+      </div>
+    </section>
+    <!-- contact -->
+
+    <div class="continer">
+      <p class="quote">we are based photography, wedding coverage and we also cover concert,<span>we print pictures, role up banners you can place your orders in our website</span></p>
+      </div>
+    <!-- footer -->
+    <footer class="section" style="margin-top: 300px;">
+      <p>
+        copyright &copy; HOLY CONCEPTS
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+const quote = document.querySelector('.quote');
+const text = quote.textContent;
+quote.textContent = '';
+let index = 0;
+function typeEffect() {
+if (index < text.length) {
+quote.textContent += text.charAt(index);
+index++;
+setTimeout(typeEffect, 50); // Adjust typing speed here
+}
+}
+typeEffect();
+});
+    </script>
+    <!-- javascript -->
+    <script src="our services.js"></script>
+  </body>
+</html>

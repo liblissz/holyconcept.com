@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our videos</title>
+    <style>
+        ::-webkit-scrollbar{
+            background-color: rgba(2, 2, 2, 0.555);
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(127, 255, 212, 0.295);
+        }
+        body {
+font-family: Arial, sans-serif;
+
+background-color: #50484871;
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+
+}
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="gallery">
+        
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/oOYxbl8v32M" title="GOD&#39;S DOING_By_StandStar (Official Music Video)_By Dir Fang Ge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/FwQKbBOxrSw" title="I_STILL_TRUST_YOU_-_MARK_EZEKIEL (Official Video) _Holy Concepts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/jMepUqo07ZU" title="LET IT RAIN_by_Min Marceline (Official Video)_Dir. HOLY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/RUcobbIzeqU" title="ONLY YOU by Fang ge and Vicky Voice Info Official Video Dir  Pudum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/Z-zW8H4oxzw" title="I SEE YOU by Fang Ge (Official Video) Dir. Holy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/BtsusTzaPrE" title="You I call_ Spirit Dance_by_JEANETTE _(Fang Ge ft Vicky Voice)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/Ijct5cQjVSo" title="Kelly Shachah - Big God ( Official Video ) Dir HOLY CONCEPTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="559" height="427" src="https://www.youtube.com/embed/EHYqxM8geig" title="THANK YOU LORD Clarice Praise Official Video (Directed by Holy Concepts)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Add more media items as needed -->
+        </div>
+        </center>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightbox = document.getElementById('lightbox');
+const lightboxContent = document.querySelector('.lightbox-content');
+const closeBtn = document.querySelector('.close');
+galleryItems.forEach(item => {
+item.addEventListener('click', () => {
+const type = item.getAttribute('data-type');
+const src = item.getAttribute('data-src');
+lightboxContent.innerHTML = '';
+if (type === 'image') {
+const img = document.createElement('img');
+img.src = src;
+lightboxContent.appendChild(img);
+} else if (type === 'video') {
+const video = document.createElement('video');
+video.controls = true;
+video.innerHTML = `<source src="${src}" type="video/mp4">Your browser does not
+support the video tag.`;
+lightboxContent.appendChild(video);
+}
+lightbox.style.display = 'flex';
+});
+});
+closeBtn.addEventListener('click', () => {
+lightbox.style.display = 'none';
+});
+lightbox.addEventListener('click', (e) => {
+if (e.target === lightbox) {
+lightbox.style.display = 'none';
+}
+});
+});
+        </script>
+</body>
+</html>
+
+
